@@ -129,6 +129,7 @@ button {
 
 /* debut banniere */
 .banniere {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,6 +176,10 @@ button {
 /* fin banniere */
 
 /* debut bloc-service */
+#sec_sercice {
+    width: 100%;
+}
+
 .titre-service {
     text-align: center;
     padding: 25px;
@@ -246,6 +251,10 @@ button {
 /* fin bloc-service */
 
 /* debut bloc-partenaire */
+.bloc_parterner {
+    width: 100%;
+}
+
 .bloc_parterner .titre-parterner {
     text-align: center;
     margin-top: 50px;
@@ -263,7 +272,7 @@ button {
 
 /* debut bloc-contact */
 .bloc-contact {
-    width: 100%;
+    width: 95%;
     background-color: #f2f2f2;
     display: flex;
     justify-content: center;
@@ -441,10 +450,9 @@ button {
         width: 60%;
     }
 
-    /* .card-wrapper {
-        display: flex;
-        flex-direction: column;
-    } */
+    .bloc-contact, .footer, #sec_service, .banniere, .navbar{
+        width: 100%;
+    }
 }
 
 /*
