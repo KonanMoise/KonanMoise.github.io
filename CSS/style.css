@@ -92,30 +92,11 @@ button {
     cursor: pointer;
 }
 
-.button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: all 0.4s ease;
-}
 
-.button:hover {
+.navbar .blocBut .button:hover {
     color: #CE4DD0;
     background-color: #fff;
-}
-
-.button:hover::before {
-    opacity: 1;
-    background-color: #fff;
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    transition: -webkit-transform 0.6s cubic-bezier(0.08, 0.35, 0.13, 1.02), opacity 0.4s;
-    transition: transform 0.6s cubic-bezier(0.08, 0.35, 0.13, 1.02), opacity;
+    border-color: #CE4DD0;
 }
 
 .navbar .menu-hamburger {
@@ -185,6 +166,11 @@ button {
     padding: 25px;
 }
 
+.titre-service .grand-titre {
+    margin-bottom: 5px;
+    text-decoration: underline #CE4DD0;
+}
+
 .card-wrapper {
     display: flex;
     justify-content: center;
@@ -192,7 +178,7 @@ button {
 }
 
 .card {
-    width: 420px;
+    width: 20%;
     height: auto;
     border-radius: 25px;
     background-color: #eee9ec;
@@ -259,6 +245,10 @@ button {
     text-align: center;
     margin-top: 50px;
     padding: 25px;
+}
+
+.bloc_parterner .titre-parterner .grand-titre {
+    text-decoration: underline #CE4DD0;
 }
 
 .card-wrapper-paterner {
@@ -384,6 +374,44 @@ button {
 }
 
 /* responsive navbar */
+@media screen and (max-width: 1369px) {
+    .navbar .menu-hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 75px;
+        left: 35px;
+        width: 100%;
+        align-items: center;
+        background-color: rgba(180, 169, 182, 0.425);
+        backdrop-filter: blur(8);
+        margin-left: -110%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar .nav-links ul{
+        margin: 25px 0;
+        font-size: 1.2rem;
+    }
+
+    .navbar .logo {
+        text-align: center;
+        margin-left: 200px;
+    }
+}
+
+
 @media screen and (max-width: 900px) {
 
     .button {
@@ -450,6 +478,12 @@ button {
         width: 60%;
     }
 
+    #sec_sercice {
+        height:80vh;
+        padding-bottom: 30px;
+    }
+
+
     .bloc-contact, .footer, #sec_service, .banniere, .navbar{
         width: 100%;
     }
@@ -495,6 +529,7 @@ section {
     width: 100%;
     height: 50vh;
     margin-top: 35px;
+    margin-bottom: 35px;
     background-color: rgb(219, 210, 210);
 }
 
@@ -504,7 +539,7 @@ section .contentBox {
     justify-content: center;
     width: 50%;
     height: 100%;
-    background: linear-gradient(transparent, rgb(219, 210, 210));
+    background: linear-gradient(transparent, rgba(225, 225, 225, 0.9));
 }
 
 section .contentBox .formBox h2{
@@ -566,10 +601,12 @@ section .imgBox {
     position: relative;
     width: 50%;
     height: 100%;
-    background: linear-gradient(transparent,#906591), url("../IMG/conect.png");
+    background: linear-gradient(transparent,rgba(225, 225, 225, 0.9)), url("../IMG/conect.png");
     background-position: center;
     background-size: cover;
 }
+
+footer_con
 
 
 /* Responsive form */
@@ -599,7 +636,7 @@ section .imgBox {
 
     ********  DEBUT ********
 
-    STYLE DE LA PAGE CONNEXION
+    STYLE DE LA PAGE INSCRIRE
 
 */
 
@@ -627,7 +664,7 @@ section .imgBox_ins {
     position: relative;
     width: 50%;
     height: 100%;
-    background: linear-gradient(transparent,#906591), url("../IMG/inscri.png");
+    background: linear-gradient(transparent,rgba(225, 225, 225, 0.9)), url("../IMG/inscri.png");
     background-position: center;
     background-size: cover;
 }
