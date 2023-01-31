@@ -606,12 +606,13 @@ section .imgBox {
     background-size: cover;
 }
 
-footer_con
 
 
 /* Responsive form */
 
-@media (max-width:768px) {
+
+@media screen and (max-width:768px){
+
     section .imgBox {
         position: absolute;
         top: 0;
@@ -619,12 +620,12 @@ footer_con
         width: 100%;
 
     }
-
+    
     section .contentBox {
         width: 100%;
         z-index: 1;
     }
-
+    
     section .contentBox .formBox {
         background-color: rgb(255 255 255/0.9);
         padding: 40px 80px 40px 40px;
