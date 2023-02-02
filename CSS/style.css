@@ -154,6 +154,7 @@ button {
 
 .image-banner img {
     border: 1px solid #CE4DD0;
+    border-radius: 10px;
 }
 /* fin banniere */
 
