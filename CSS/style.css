@@ -34,13 +34,10 @@ button {
 
     STYLE DE LA PAGE INDEX
 
-
-
 */
 
 /* debut navbar */
 .navbar {
-    position: absolute;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -116,9 +113,10 @@ button {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 70vh;
+    height: auto;
     text-align: center;
     background-color: #F2F2F2;
+    padding: 30px;
 }
 
 .banniere .contenu {
@@ -161,6 +159,7 @@ button {
 /* debut bloc-service */
 #sec_sercice {
     width: 100%;
+    height: auto;
 }
 
 .titre-service {
@@ -177,6 +176,7 @@ button {
     display: flex;
     justify-content: center;
     justify-items: center;
+    flex-direction: row;
 }
 
 .card {
@@ -215,7 +215,7 @@ button {
     border-radius: 50%;
     padding: 3px;
     background-color: #fff;
-    border: 2px solid #CE4DD0;
+    border: 4px solid #CE4DD0;
 }
 
 .card-image .card-img {
@@ -239,6 +239,28 @@ button {
 .card-content .button:hover{
     color: #CE4DD0;
     background-color: #fff;
+}
+
+@media (max-width:930px) {
+    .card-wrapper{
+        width: 100%;
+    }
+
+    .card-wrapper .card{
+        width: 100%;
+    }
+
+    @media (max-width:906px) {
+        .card-wrapper{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .card-wrapper .card{
+            width: 40%;
+        }
+    }
 }
 
 /* fin bloc-service */
@@ -329,14 +351,24 @@ button {
 .container_ct {
     display: flex;
     justify-content: center;
-    justify-self: center;
-    width: 80%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
     margin: 0 auto;
     border-radius: 6px;
     padding: 30px 60px 40px 40px;
 }
 
+.container_ct .carte{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 .container_ct .content {
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -379,7 +411,7 @@ button {
 
 .container_ct .content .right-side {
     width: 75%;
-    margin-left: 75px;
+    margin-left: 50px;
 }
 
 .container_ct .content .right-side .topic-text {
@@ -468,6 +500,25 @@ button {
     .container_ct .content .right-side{
         width: 100%;
         margin-left: 0;
+    }
+}
+
+
+/* Resposive */
+@media (max-width: 846px){
+    .container_ct {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .container_ct .carte{
+        width: 100%;
+    }
+
+    .container_ct .content {
+        width: 100%;
     }
 }
 
