@@ -70,8 +70,8 @@ button {
 }
 
 .navbar .nav-links ul li.active a {
-    color: #d83070;
-    font-weight: 600;
+    color: #ce4dd0;
+    font-weight: bold;
 }
 
 .navbar .blocBut {
@@ -431,9 +431,9 @@ button {
     cursor: pointer;
 }
 
-.button_ct input[type="button"]:hover {
-    background: #fff;
-    color: #CE4DD0;
+.right-side .button_ct input[type="button"]:hover {
+    background: #9561a4;
+    color: #fff;
 }
 
 @media (max-width:950px) {
@@ -476,7 +476,7 @@ button {
 
 /* footer */
 .footer {
-    background-color: rgb(255, 255, 245);
+    background-color: #fff;
     width: 100%;
     margin-top: 25px;
     padding: 50px 0px;
@@ -691,10 +691,13 @@ button {
 section {
     position: relative;
     display: flex;
-    width: 100%;
+    width: 50%;
     height: 50vh;
     margin-top: 35px;
     margin-bottom: 35px;
+    box-shadow: 2px 4px 8px rgba(135, 53, 231, 0.51);
+    perspective: 100000px;
+    border-radius: 16px;
 }
 
 section .contentBox {
@@ -703,7 +706,10 @@ section .contentBox {
     justify-content: center;
     width: 50%;
     height: 100%;
-    background: linear-gradient(transparent, rgba(225, 225, 225, 0.9));
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+    background: linear-gradient(transparent,rgba(255, 255, 255, 0.951));
+    box-shadow: 0px 0px 8px rgba(135, 53, 231, 0.51);
 }
 
 section .contentBox .formBox h2{
@@ -714,6 +720,7 @@ section .contentBox .formBox h2{
     margin-bottom: 20px;
     border-bottom: 4px solid #CE4DD0;
     letter-spacing: 1px;
+    text-align: center;
     display: inline-block;
 }
 
@@ -725,7 +732,7 @@ section .contentBox .formBox .inputBx input {
     width: 100%;
     padding: 10px 20px;
     font-weight: 400;
-    border: 1px solid #CE4DD0;
+    border: 1px solid rgb(135, 53, 231);
     letter-spacing: 1px;
     outline: none;
     background-color: transparent;
@@ -733,16 +740,24 @@ section .contentBox .formBox .inputBx input {
 }
 
 section .contentBox .formBox .inputBx input[type="submit"] {
+    width: 150px;
     background-color: #ce4dd0;
+    padding: 10px 10px;
     color: #eee;
     outline: 0;
     border: 0;
     font-weight: 600;
     cursor: pointer;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
 }
 
 section .contentBox .formBox .inputBx input[type="submit"]:hover {
-    background-color: #ce4dd0;
+    background: rgb(135, 53, 231, 0.51);
+    color: #fff;
+    font-weight: bold;
 }
 
 .remember {
@@ -765,7 +780,9 @@ section .imgBox {
     position: relative;
     width: 50%;
     height: 100%;
-    background: linear-gradient(transparent,rgba(225, 225, 225, 0.9)), url("../IMG/conect.png");
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background: linear-gradient(transparent,rgba(255, 255, 255, 0.951)), url("../IMG/login.png") center/cover;
     background-position: center;
     background-size: cover;
 }
@@ -828,7 +845,9 @@ section .imgBox_ins {
     position: relative;
     width: 50%;
     height: 100%;
-    background: linear-gradient(transparent,rgba(225, 225, 225, 0.9)), url("../IMG/inscri.png");
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background:url("../IMG/sign_up.png");
     background-position: center;
     background-size: cover;
 }
