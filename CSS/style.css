@@ -332,7 +332,6 @@ button {
     justify-self: center;
     width: 80%;
     margin: 0 auto;
-    /* background-color: #adf; */
     border-radius: 6px;
     padding: 30px 60px 40px 40px;
 }
@@ -355,16 +354,6 @@ button {
     margin-top: 6px;
 }
 
-/* .container_ct .content .left-side::before{
-    content: '';
-    position: relative;
-    height: 100%;
-    width: 2px;
-    right: -100px;
-    top: 50px;
-    transform: translateY(-50%);
-    background: #785691;
-} */
 
 .content .left-side .details {
     margin: 14px;
@@ -394,6 +383,7 @@ button {
 }
 
 .container_ct .content .right-side .topic-text {
+    text-align: center;
     font-size: 33px;
     font-weight: 600;
     color: #CE4DD0;
@@ -423,6 +413,7 @@ button {
 
 .content .right-side .button_ct {
     display: inline-block;
+    text-align: center;
     margin-top: 6px;
 }
 
@@ -684,7 +675,6 @@ button {
     justify-content: center;
     justify-items: center;
     height: 10vh;
-    /* background:linear-gradient(transparent, rgb(219, 210, 210)), url("../IMG/inscri.png"); */
     background-position: center;
     background-size: cover;
 }
@@ -705,7 +695,6 @@ section {
     height: 50vh;
     margin-top: 35px;
     margin-bottom: 35px;
-    /* background-color: rgb(219, 210, 210); */
 }
 
 section .contentBox {
@@ -716,11 +705,6 @@ section .contentBox {
     height: 100%;
     background: linear-gradient(transparent, rgba(225, 225, 225, 0.9));
 }
-
-/* section .contentBox .formBox {
-    border: 2px solid;
-    padding-right: 15px;
-} */
 
 section .contentBox .formBox h2{
     color: #CE4DD0;
@@ -827,7 +811,6 @@ section .imgBox {
     justify-content: center;
     justify-items: center;
     height: 10vh;
-    /* background:linear-gradient(transparent, rgb(219, 210, 210)), url("../IMG/conect.png"); */
     background-position: center;
     background-size: cover;
 }
